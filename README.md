@@ -4,7 +4,12 @@ This work aims to:
 * Explain for the top 5 predictions of these models by GradCAM and Guided-GradCAM
 
 With the current version, there are 26 pre-trained models.
-
+## Briefs
+| **Method**                | **Brief**                                                                                                                                                                                                                                                                                               | **Example** |
+|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------:|
+| Filter visualization      | Simply plot the learned filters.<br>* Step 1: Find a convolutional layer.<br>* Step 2: Get weights at a convolution layer, they are filters at this layer.<br>* Step 3: Plot filter with the values from step 2.<br>This method does not requre an input image.                                         |             |
+| Feature map visualization | Plot the feature maps obtained when fitting an image to the network.<br>* Step 1: Find a convolutional layer.<br>* Step 2: Build a feature model from the input up to that convolutional layer.<br>* Step 3: Fit the image to the feature model to get feature maps.<br>* Step 4: Plot the feature map. |             |
+| Guided Backpropagation    | Backpropagate from a particular convolution layer to input image with modificaton of the gradient of ReLU.                                                                                                                                                                                              |             |
 ## How to use
 ### Run with your resource
 * Clone this repo:
