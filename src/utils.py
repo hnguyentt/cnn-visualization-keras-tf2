@@ -52,3 +52,4 @@ def get_conv_layers(model):
         if "conv" in l.name and all(x not in l.name for x in excluded_layers):
             layers.append(l.name)
     return layers
+
