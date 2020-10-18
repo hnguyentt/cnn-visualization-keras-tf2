@@ -1,8 +1,9 @@
 # CNN Visualization and Explanation
-This work aims to:
-* Visualize filters and feature maps of all pre-trained models on ImageNet in [`tf.keras.applications`](https://github.com/conan7882/CNN-Visualization) with `Tensorflow` verion 2.3.0. The visualization methods include simply plotting filters of the model, plotting the feature maps of convolutional layers, DeConvNet and Guided Backpropagation
-* Explain for the top 5 predictions of these models by GradCAM and Guided-GradCAM
-* Generate Deep Dream visuals.
+This project aims to visualize filters, feature maps, guided backpropagation from any convolutional layers of all pre-trained models on ImageNet available in `tf.keras.applications` (TF 2.3). This will help you observe how filters and feature maps change through each convolution layer from input to output.
+
+With any image uploaded, you can also make the classification with any of the above models and generate GradCAM, Guided-GradCAM to see the important features based on which the model makes its decision.
+
+If "art" is in your blood, you can use any model to generate hallucination-like visuals from your original images. For this feature, personally, I highly recommend trying with "InceptionV3" model as the deep-dream images generated from this model are appealing.
 
 With the current version, there are 26 pre-trained models.
 
