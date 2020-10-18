@@ -5,11 +5,23 @@ This work aims to:
 
 With the current version, there are 26 pre-trained models.
 ## Briefs
-| **Method**                | **Brief**                                                                                                                                                                                                                                                                                               | **Example** |
-|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------:|
-| Filter visualization      | Simply plot the learned filters.<br>* Step 1: Find a convolutional layer.<br>* Step 2: Get weights at a convolution layer, they are filters at this layer.<br>* Step 3: Plot filter with the values from step 2.<br>This method does not requre an input image.                                         |             |
-| Feature map visualization | Plot the feature maps obtained when fitting an image to the network.<br>* Step 1: Find a convolutional layer.<br>* Step 2: Build a feature model from the input up to that convolutional layer.<br>* Step 3: Fit the image to the feature model to get feature maps.<br>* Step 4: Plot the feature map. |             |
-| Guided Backpropagation    | Backpropagate from a particular convolution layer to input image with modificaton of the gradient of ReLU.                                                                                                                                                                                              |             |
+Filter: VGG16, `block1_conv1`
+![](images/filtervisVGG16_block1_conv1.png)
+Feature maps: VGG16, `block1_conv1`
+![](images/featurevisVGG16_block1_conv1.png)
+Feature maps: VGG16, `block5_conv3`
+![](images/featurevisVGG16_block5_conv3.png)
+Guided backprop: VGG16, `block1_conv1`
+![](images/guidedbackpropVGG16_block1_conv1.png)
+Guided backprop: VGG16, `block5_conv3`
+![](images/backguidedVGG16_block5_conv3.png)
+GradCAM & Guided GradCAM for class **lakeside**
+![](images/lakesideInceptionV3.png)
+GradCAM & Guided GradCAM for class **boathouse**
+![](images/boathouseInceptionv3.png)
+
+
+
 ## How to use
 ### Run with your resource
 * Clone this repo:
@@ -32,3 +44,4 @@ bash requirements.txt
 1. [How to Visualize Filters and Feature Maps in Convolutional Neural Networks](https://machinelearningmastery.com/how-to-visualize-filters-and-feature-maps-in-convolutional-neural-networks/) by Machine Learning Mastery
 2. Pytorch CNN visualzaton by [utkuozbulak](https://github.com/utkuozbulak): https://github.com/utkuozbulak
 3. CNN visualization with TF 1.3 by [conan7882](https://github.com/conan7882): https://github.com/conan7882/CNN-Visualization
+4. Deep Dream Tutorial from François Chollet: https://keras.io/examples/generative/deep_dream/ 
