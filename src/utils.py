@@ -32,7 +32,7 @@ model_dicts = {
     "EfficientNetB7": "efficientnet"
 }
 
-excluded_layers = ["bn","act","relu","out","add","pad","2d","concat"]
+excluded_layers = ["bn","act","relu","out","add","pad","concat"]
 
 
 # FUNCTIONS
@@ -43,8 +43,8 @@ def array2bytes(im_arr, fmt='png'):
 
     return f.getvalue()
 
-def create_model(model_name):
-    return getattr(tf.keras.applications,model_name)(weights="imagenet",include_top=True)
+def create_model(model_name, include_top=True):
+    return getattr(tf.keras.applications,model_name)(weights="imagenet",include_top=include_top)
 
 def get_conv_layers(model):
     layers = []
