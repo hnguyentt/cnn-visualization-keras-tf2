@@ -26,7 +26,12 @@ bash requirements.txt
 * Run demo with the file `visualization.ipynb`
 
 ### Run on Google Colab
-(to be updated)
+* Go to this link: https://colab.research.google.com/github/nguyenhoa93/cnn-visualization-keras-tf2/blob/master/visualization.ipynb
+* Change your runtime type to `Python3`
+* Choose GPU as your hardware accelerator.
+* Run the code.
+
+Voila! You got it.
 
 ## References
 1. [How to Visualize Filters and Feature Maps in Convolutional Neural Networks](https://machinelearningmastery.com/how-to-visualize-filters-and-feature-maps-in-convolutional-neural-networks/) by Machine Learning Mastery
