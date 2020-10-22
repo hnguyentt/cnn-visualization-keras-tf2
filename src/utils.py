@@ -15,7 +15,7 @@ model_dicts = {
     "ResNet152V2": "resnet_v2",
     "InceptionV3": "inception_v3",
     "InceptionResNetV2": "inception_resnet_v2",
-    "MobileMet": "mobilenet",
+    "MobileNet": "mobilenet",
     "MobileNetV2": "mobilenet_v2",
     "DenseNet121": "densenet",
     "DenseNet169": "densenet",
