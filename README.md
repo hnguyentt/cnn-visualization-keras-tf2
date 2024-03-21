@@ -1,4 +1,6 @@
 # CNN Visualization and Explanation
+<a href="https://colab.research.google.com/github/hnguyentt/cnn-visualization-keras-tf2/blob/master/visualization.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
 This project aims to visualize filters, feature maps, guided backpropagation from any convolutional layers of all pre-trained models on ImageNet available in `tf.keras.applications` (TF 2.3). This will help you observe how filters and feature maps change through each convolution layer from input to output.
 
 With any image uploaded, you can also make the classification with any of the above models and generate GradCAM, Guided-GradCAM to see the important features based on which the model makes its decision.
